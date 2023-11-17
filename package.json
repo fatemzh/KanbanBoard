@@ -1,0 +1,15 @@
+{
+  "name": "kanbanboard",
+  "version": "1.0.0",
+  "description": "This Electron app is in its first version and aims to provide an easy to manipulate kanban board app.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "KANBANBOARD"
+  },
+  "author": "Abid Fatem",
+  "license": "ISC"
+}
