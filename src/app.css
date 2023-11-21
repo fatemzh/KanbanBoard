@@ -10,6 +10,8 @@ body {
 font-family: 'Galindo', sans-serif;color: #333;
 background-color: #f4f4f4;
 line-height: 1.5;
+background: url(./images/cf12430b97af777d1f6ac4e82f1bd5da.jpg) no-repeat;
+background-size: 100%;
 }
 
 /* Conteneur principal */
@@ -18,8 +20,72 @@ width: 80%;
 height: 650px;
 margin: 60px auto;
 overflow: hidden;
-background-color: lavender;
-border-radius: 20px;
+background: rgba(178, 188, 232, 0.66);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+backdrop-filter: blur(4px);
+-webkit-backdrop-filter: blur(10.9px);
+border: 1px solid rgba(176, 145, 255, 0.29);
+padding: 30px;
+}
+
+.boards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.board{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+    height: 500px;
+    overflow: hidden;
+    background: rgba(221, 227, 255, 0.66);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(176, 145, 255, 0.29);
+    padding: 30px;
+}
+
+.board h2{
+    text-align: center;
+}
+
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: rgba(238, 241, 255, 0.66);
+    border-radius: 16px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10.9px);
+    border: 1px solid rgba(176, 145, 255, 0.29);
+    padding: 10px 20px;
+}
+
+.task a{
+    text-decoration: none;
+}
+
+.task p{
+    cursor: pointer;
+}
+
+.task:hover{
+    background: rgb(122, 118, 227);
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
 }
 
 /* Pied de page */
@@ -40,55 +106,6 @@ h1, h2, h3, h4, h5, h6 {
 margin-bottom: 20px;
 }
 
-/* Styles pour les paragraphes */
-p {
-margin-bottom: 10px;
-}
-
-/* Boutons */
-.button {
-display: inline-block;
-padding: 10px 20px;
-background: #333;
-color: #fff;
-text-decoration: none;
-border-radius: 5px;
-}
-
-.button:hover {
-background: #444;
-}
-
-/* Formulaire */
-form {
-max-width: 300px;
-margin: 20px auto;
-}
-
-form label {
-display: block;
-margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form input[type="password"] {
-width: 100%;
-padding: 8px;
-margin-bottom: 10px;
-border: 1px solid #ddd;
-border-radius: 4px;
-}
-
-form input[type="submit"] {
-width: 100%;
-padding: 10px;
-border: none;
-border-radius: 5px;
-background: #333;
-color: white;
-}
-
-form input[type="submit"]:hover {
-background: #444;
+a:visited{
+    color: inherit;
 }
