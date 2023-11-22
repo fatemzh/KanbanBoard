@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
+    <script src="./src/js/main.js"></script>
+    <script src="./src/js/taskManager.js"></script>
+    <script src="./src/js/utils.js"></script>
+
     <title>Mon Kanban Board</title>
 </head>
 <body>
@@ -25,14 +29,16 @@
         <div class="boards">
             <!-- To Do Tab -->
             <div class="board">
-                <h2>A faire</h2>
-                <div class="task">
-                    <p>Me renseigner sur javascript.info</p>
-                    <div class="icons">
-                        <span class="material-symbols-outlined">
-                            <a href="./views/add-update-task.html">edit</a>
-                        </span>
-                        <span class="material-symbols-outlined">delete</span>
+                <div class="ToDo">
+                    <h2>A faire</h2>
+                    <div class="task">
+                        <p>Me renseigner sur javascript.info</p>
+                        <div class="icons">
+                            <span class="material-symbols-outlined">
+                                <a href="./views/add-update-task.html">edit</a>
+                            </span>
+                            <span class="material-symbols-outlined">delete</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -64,6 +70,21 @@
             </div>
         </div>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            let tasks = localStorage.getItem("tasks");
+            tasks = tasks? JSON.parse(tasks):[];
+            console.log(tasks);
+
+            tasks.forEach(task =>{
+                const board = document.querySelector('.board');
+                const taskElement = document.createElement('div');
+                taskElement.classList.add('task');
+                taskElement.innerHTML = `<p>${task.title}: ${task.description}</p>`;
+                board.appendChild(taskElement);
+            })
+        })
+    </script>
 </body>
 <footer>
     <p>Développé par Abid Fatem</p>

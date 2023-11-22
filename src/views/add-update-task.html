@@ -24,15 +24,34 @@
         </header>        
         <div class="case">
             <h2>Ajouter/modifier une tâche</h2>
-            <form action="#">
+            <form id="task-form">
                 <input type="text" name="title-task" id="title-task" placeholder="Intitulé de la tâche ...">
-                <textarea name="description" id="description" cols="30" rows="10" placeholder="Description de la tâche"></textarea>
-                <button type="submit" id="validate-form" class="pushable">
-                    <a href="../index.html" class="front">Valider</a>
-                </button>
-            </form>
+                <textarea name="description" id="description" placeholder="Description de la tâche"></textarea>
+                <button type="submit">Valider</button>
+            </form>            
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("task-form").addEventListener('submit', function(e){
+                e.preventDefault();
+
+                const title = document.getElementById("title-task").value;
+                const description = document.getElementById("description").value;
+
+                // Stock la tâche dans localstorage
+                const newTask = {title, description};
+                let tasks = localStorage.getItem("tasks");
+                tasks = tasks ? JSON.parse(tasks):[];
+                tasks.push(newTask);
+                localStorage.setItem("tasks", JSON.stringify(tasks));
+
+                //Redirige
+                window.location.href = "../index.html";
+            })
+        })
+    </script>
 </body>
 <footer>
     <p>Développé par Abid Fatem</p>
