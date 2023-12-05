@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const TaskForm({onAddTask})=>{
+const TaskForm = ({onAddTask})=>{
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState(' ');
@@ -16,7 +16,7 @@ const TaskForm({onAddTask})=>{
         <form onSubmit={handleSubmit} id='task-form'>
             <input 
                 type="text" 
-                name="title-task" 
+                className="title-task" 
                 id="title-task" 
                 placeholder="Intitulé de la tâche ..."
                 value={title}
@@ -24,7 +24,7 @@ const TaskForm({onAddTask})=>{
                 required
             />     
             <textarea 
-                name="description" 
+                className="description" 
                 id="description" 
                 placeholder="Description de la tâche"
                 value={description}
