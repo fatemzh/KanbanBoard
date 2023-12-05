@@ -1,6 +1,5 @@
 import React from 'react';
 import './Task.css';
-import './TaskBoard.js';
 
 const Task = ({task, onMove, onEdit, onDelete}) =>{
     return (
