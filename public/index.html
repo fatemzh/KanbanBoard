@@ -11,66 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Galindo&display=swap" rel="stylesheet">
-    <script src="./src/js/main.js"></script>
-    <script src="./src/js/taskManager.js"></script>
-    <script src="./src/js/utils.js"></script>
-
+    <script src="../src/App.js"></script>
+    <script src="../src/index.js"></script>
     <title>Mon Kanban Board</title>
 </head>
 <body>
-    <div id="root"></div> <!-- Point de montage React -->
-    <div class="container">
-        <header>
-            <h1>Mon board</h1>
-            <div class="button-add">
-                <span class="material-symbols-outlined">add_box</span>
-                <a href="./views/add-update-task.html">Ajouter une tâche</a>
-            </div>
-        </header>
-        <div class="boards">
-            <!-- To Do Tab -->
-            <div class="board">
-                <div class="ToDo">
-                    <h2>A faire</h2>
-                    <div class="task">
-                        <p>Me renseigner sur javascript.info</p>
-                        <div class="icons">
-                            <span class="material-symbols-outlined">
-                                <a href="./views/add-update-task.html">edit</a>
-                            </span>
-                            <span class="material-symbols-outlined">delete</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- En cours Tab -->
-            <div class="board">
-                <h2>En cours</h2>
-                <div class="task">
-                    <p>Faire la maquette figma</p>
-                    <div class="icons">
-                        <span class="material-symbols-outlined">
-                            <a href="./views/add-update-task.html">edit</a>
-                        </span>                        
-                        <span class="material-symbols-outlined">delete</span>
-                    </div>
-                </div>
-            </div>
-            <!-- En cours Tab -->
-            <div class="board">
-                <h2>Terminé</h2>
-                <div class="task">
-                    <p>Envoyer le CDC</p>
-                    <div class="icons">
-                        <span class="material-symbols-outlined">
-                            <a href="./views/add-update-task.html">edit</a>
-                        </span>
-                        <span class="material-symbols-outlined">delete</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="root"></div>
 </body>
 <footer>
     <p>Développé par Abid Fatem</p>
