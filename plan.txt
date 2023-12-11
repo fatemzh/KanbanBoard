@@ -1,0 +1,17 @@
+Projet plan de travail:
+
+Main feature: kanban board 
+Fonctionnalité: CRUD, catégories de kanban (work, school, social etc)
+changer fond d'écran
+
+Améliorer: ajouter page pomodoro avec icone pomodoro sur chaque task qui fait 
+que lorsque l'on clique sur la tâche on arrive sur la page pomodoro avec en intitulé
+le nom de la tâche. Compteur maj à chaque tour de pomodoro sur la tâche pour 
+tracker le temps passé
+
+Gamification, système de points à chaque tâche terminé: débloquer wallpaper, pets?
+plants, lvl up avec status ?
+
+Big update: faire un deskboard avec le board au centre, en haut à gauche des stickers
+de note, à droite sa playlist spotify d'étude, en bas du kanban board les plantes
+qu'on fait pousser 
