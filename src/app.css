@@ -1,13 +1,14 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
 
 /* Polices et couleurs de base */
 body {
-font-family: 'Galindo', sans-serif;color: #333;
+font-family: "Poppins", sans-serif;
 background-color: #f4f4f4;
 line-height: 1.5;
 background: url(./images/cf12430b97af777d1f6ac4e82f1bd5da.jpg) no-repeat;

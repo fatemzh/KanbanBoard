@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from './Component/Footer';
+import "./app.css";
 
-class App extends React.Component{
-    render(){
-        return(
-            <div>
-                <Footer/>
-            </div>
-        )
-    }
-}
+const App = () => {
+    return (
+      <>
+        <Footer/>
+      </>
+    )
+  }
+  
+  export default App
+  
