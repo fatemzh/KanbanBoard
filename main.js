@@ -9,7 +9,8 @@ function createWindow () {
     }
   });
 
-  win.loadURL('http://localhost:3000'); // URL de votre serveur de développement React
+  // Charge le fichier index.html local
+  win.loadFile('./index.html');
 }
 
 app.whenReady().then(createWindow);
